@@ -23,5 +23,5 @@ def get_file_content(working_directory, file_path):
                 file_content_string += f'[...File "{file_path}" truncated at {MAX_CHARS} characters]'
         return file_content_string
 
-    except:
-        return f"Error: Failed to get file info"
+    except Exception as e:
+        return f"Error: Failed to get file info: {e}"

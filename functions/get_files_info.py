@@ -23,5 +23,5 @@ def get_files_info(working_directory, directory="."):
             file_info = f"  - {file}: file_size={size} bytes, is_dir={is_directory}"
             file_info_list.append(file_info)
         return f"Results for '{directory}' dir:\n" + "\n".join(file_info_list)
-    except:
-        return f"Error: Failed to get directory info"
+    except Exception as e:
+        return f"Error: Failed to get directory info: {e}"
