@@ -6,3 +6,6 @@ Model's working directory is locked to the calculator package.
 uv run main.py "<prompt>"
 ```
 
+```
+uv run main.py "<prompt>" --verbose
+```
